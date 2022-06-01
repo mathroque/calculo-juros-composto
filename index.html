@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de jurus compostos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><img src="images/logo.png" alt="logo"></header>
+    <div class="container">
+        <div class="produto">
+            <label for="txt-produto"><span>Valor inicial:</span></label>
+            <input type="number" name="" id="txt-produto" placeholder="Ex.: 200">
+        </div>
+        <div class="parcelas">
+            <label for="txt-parcelas"><span>Meses:</span></label>
+            <input type="number" name="" id="txt-parcelas" placeholder="Ex.: 12">
+        </div>
+        <div class="jurus">
+            <label for="txt-jurus"><span>Taxa de juros:</span></label>
+            <input type="number" name="" id="txt-juros" placeholder="Ex.: 2">
+        </div> 
+        <button onclick="calcJuros()">Calcular</button>
+
+        <div id="resultado">
+            <table>
+                <caption>Resultados:</caption>
+                <tr>
+                    <th>Evento</th>
+                    <th>Valores</th>
+                </tr>
+                <tr>
+                    <td>Valor inicial</td>
+                    <td id="res-inicial">0</td>
+                </tr>
+                <tr>
+                    <td>Valor acrescido</td>
+                    <td id="res-acrescido">0</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="res-total">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

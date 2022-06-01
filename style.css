@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background: rgba(76, 144, 146, 0.233);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 500px;
+    background: rgba(76, 144, 146, 0.219);
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container input {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container button {
+    width: 100px;
+    margin: 20px auto;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.479) 1px 1px 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: bold;
+    color: rgb(76, 144, 146);
+}
+
+.container button:hover {
+    background: rgb(76, 144, 146);
+    color: rgb(255, 255, 255);
+}
+
+.container button:active {
+    background: rgb(48, 76, 77);
+}
+
+#resultado {
+    display: none;
+    color: black;
+}
+
+#resultado table {
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    background: white;
+    width: 100%;
+    border-radius: 3px;
+}
+
+caption {
+    font-style: italic;
+}
+
+td, th {
+    padding: 10px;
+}
+
+th {
+    background: rgb(76, 144, 146);
+    text-align: left;
+    color: white;
+}
